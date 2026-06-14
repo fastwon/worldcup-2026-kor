@@ -20,10 +20,18 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  // 히어로 CTA: 대한민국 뷰로 전환 후 해당 섹션으로 스크롤 (어느 뷰에서 눌러도 동작)
+  const goToKorSection = (anchor) => {
+    setView('kor')
+    setTimeout(() => {
+      document.querySelector(anchor)?.scrollIntoView({ behavior: 'smooth' })
+    }, 60)
+  }
+
   return (
     <>
       <Navbar view={view} onChangeView={changeView} />
-      <Hero />
+      <Hero onNavigate={goToKorSection} />
       <ViewToggle view={view} onChange={changeView} />
 
       {view === 'kor' ? (

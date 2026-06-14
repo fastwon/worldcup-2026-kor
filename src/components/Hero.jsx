@@ -3,7 +3,7 @@ import matchesData from '../data/matches.json'
 import teamsData from '../data/teams.json'
 import './Hero.css'
 
-export default function Hero() {
+export default function Hero({ onNavigate }) {
   // 결과가 아직 없는 다음 경기 (없으면 마지막 경기)
   const nextMatch =
     matchesData.matches.find((m) => m.result == null) ??
@@ -52,8 +52,8 @@ export default function Hero() {
         </div>
 
         <div className="hero__cta">
-          <a className="btn btn--primary" href="#schedule">경기 일정 보기</a>
-          <a className="btn btn--ghost" href="#group">A조 분석</a>
+          <button className="btn btn--primary" onClick={() => onNavigate('#schedule')}>경기 일정 보기</button>
+          <button className="btn btn--ghost" onClick={() => onNavigate('#group')}>A조 분석</button>
         </div>
       </div>
     </header>
