@@ -8,10 +8,12 @@ const POS_LABEL = { GK: 'GK', DF: 'DF', MF: 'MF', FW: 'FW' }
 const PHOTO_EXTS = ['jpg', 'jpeg', 'png']
 
 function PlayerAvatar({ player, teamId }) {
+  // 배포 하위 경로(BASE_URL) 대응. 개발=/, 배포=/worldcup-2026-kor/
+  const base = import.meta.env.BASE_URL
   // 규칙에 따른 후보 경로 (확장자 순서대로 탐색). player.photo가 있으면 그걸 최우선.
   const candidates = [
     ...(player.photo ? [player.photo] : []),
-    ...PHOTO_EXTS.map((ext) => `/players/${teamId}_${player.number}.${ext}`),
+    ...PHOTO_EXTS.map((ext) => `${base}players/${teamId}_${player.number}.${ext}`),
   ]
   const [idx, setIdx] = useState(0)
 

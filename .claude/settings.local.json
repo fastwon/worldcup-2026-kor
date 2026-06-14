@@ -27,7 +27,14 @@
       "Bash(git init *)",
       "Bash(git config *)",
       "Bash(git add *)",
-      "Bash(git commit -q -m '2026 북중미 월드컵 대한민국 정보·홍보 페이지 *)"
+      "Bash(git commit -q -m '2026 북중미 월드컵 대한민국 정보·홍보 페이지 *)",
+      "PowerShell(winget install *)",
+      "PowerShell($g = Get-Command gh -ErrorAction SilentlyContinue; if \\($g\\) { \"gh 발견: \" + $g.Source; gh --version | Select-Object -First 1 } else { \"PowerShell에도 gh 없음\" })",
+      "PowerShell(git config *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git commit -q -m 'GitHub Pages 자동 배포 설정 \\(base 경로·Actions 워크플로\\) *)"
     ]
   }
 }
