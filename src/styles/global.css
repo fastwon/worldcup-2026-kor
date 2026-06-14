@@ -99,3 +99,45 @@ button {
   padding: 0.2rem 0.7rem;
   margin-top: var(--space-sm);
 }
+
+/* =========================================================
+   좁은 화면(휴대폰 세로, 예: 아이폰 13 미니 375px) — 카드 2단 배치
+   카드 최소폭 제약을 풀고 한 행에 2개씩 강제 배치한다.
+   ========================================================= */
+@media (max-width: 480px) {
+  .container {
+    padding-inline: var(--space-sm);
+  }
+
+  .players-grid,
+  .captains-grid,
+  .group-cards,
+  .scenario-grid,
+  .stories-grid,
+  .othergroups-grid,
+  .changes-highlights {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  /* 2단에서 안 답답하도록 카드 내부 살짝 축소 */
+  .player-card {
+    padding: var(--space-sm);
+  }
+
+  .player-card__avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .player-card__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .story-card,
+  .othergroup-card,
+  .scenario-card,
+  .change-card {
+    padding: var(--space-md);
+  }
+}
