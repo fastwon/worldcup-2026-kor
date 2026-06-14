@@ -47,7 +47,8 @@
       "Bash(node -e \"require\\('./src/data/players.json'\\);console.log\\('players.json OK'\\)\")",
       "Bash(git commit -q -m '선수 사진 우선순위 변경: 업로드한 규칙 파일이 photo URL보다 우선 *)",
       "Bash(git commit -q -m '모바일 좁은 화면\\(≤480px\\) 카드 2단 배치 + 내부 여백 조정 *)",
-      "Bash(git commit -q -m '선수 카드를 요약 타일\\(사진·이름·소속팀\\)로, 클릭 시 상세 모달 표시 + 모바일 2단 되돌림 *)"
+      "Bash(git commit -q -m '선수 카드를 요약 타일\\(사진·이름·소속팀\\)로, 클릭 시 상세 모달 표시 + 모바일 2단 되돌림 *)",
+      "Bash(git commit -q -m '선수/주장 요약 타일 폭 축소\\(150px\\) → 좁은 폰에서도 2단 자연 배치 *)"
     ]
   }
 }

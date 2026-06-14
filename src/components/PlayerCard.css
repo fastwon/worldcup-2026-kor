@@ -11,9 +11,24 @@
   background: var(--color-surface);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  padding: var(--space-md) var(--space-sm);
   box-shadow: var(--shadow-sm);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* 요약 타일 아바타는 약간 작게 (모달에선 크게 표시) */
+.player-card--compact .player-card__avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.player-card--compact .player-card__name {
+  font-size: 1.05rem;
+}
+
+.player-card__club--compact {
+  font-size: 0.82rem;
+  line-height: 1.35;
 }
 
 .player-card:hover {

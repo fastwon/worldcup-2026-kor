@@ -68,11 +68,11 @@
   font-size: 0.95rem;
 }
 
-/* === 선수 그리드 === */
+/* === 선수 그리드 (요약 타일이라 폭을 좁게 → 좁은 폰에서도 2단) === */
 .players-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-sm);
 }
 
 .players-note {
