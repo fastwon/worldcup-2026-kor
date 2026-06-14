@@ -58,7 +58,10 @@
       "Bash(curl -s -H \"User-Agent: wc/1.0\" \"https://en.wikipedia.org/w/index.php?title=2026_FIFA_World_Cup_squads&action=raw\" -o /tmp/wcsquads.txt)",
       "Read(//tmp/**)",
       "Bash(node scripts/parse-numbers.mjs)",
-      "Bash(git commit -q -m '선수/주장 등번호를 2026 월드컵 공식 등번호로 갱신\\(위키 원문 파싱\\) + 번호 스크립트 *)"
+      "Bash(git commit -q -m '선수/주장 등번호를 2026 월드컵 공식 등번호로 갱신\\(위키 원문 파싱\\) + 번호 스크립트 *)",
+      "Bash(node scripts/parse-stats.mjs)",
+      "Bash(node -e \"require\\('./src/data/players.json'\\);require\\('./src/data/captains.json'\\);console.log\\('JSON OK'\\)\")",
+      "Bash(git commit -q -m '일본 주장 이타쿠라 코로 교체\\(엔도 부상\\) + A매치 출전/골 공식 수치 갱신\\(63명\\) *)"
     ]
   }
 }
