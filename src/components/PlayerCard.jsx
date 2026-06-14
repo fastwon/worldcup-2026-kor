@@ -10,10 +10,12 @@ const PHOTO_EXTS = ['jpg', 'jpeg', 'png']
 function PlayerAvatar({ player, teamId }) {
   // 배포 하위 경로(BASE_URL) 대응. 개발=/, 배포=/worldcup-2026-kor/
   const base = import.meta.env.BASE_URL
-  // 규칙에 따른 후보 경로 (확장자 순서대로 탐색). player.photo가 있으면 그걸 최우선.
+  // 우선순위: ① 내가 올린 규칙 파일(public/players/{코드}_{번호}.{jpg|jpeg|png})
+  //          ② players.json의 photo URL(예: 위키미디어)  ③ 등번호 아바타
+  // → 직접 올린 사진이 항상 photo URL을 덮어쓴다.
   const candidates = [
-    ...(player.photo ? [player.photo] : []),
     ...PHOTO_EXTS.map((ext) => `${base}players/${teamId}_${player.number}.${ext}`),
+    ...(player.photo ? [player.photo] : []),
   ]
   const [idx, setIdx] = useState(0)
 

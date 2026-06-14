@@ -2,7 +2,7 @@
   "meta": {
     "note": "스탯(나이·키·A매치 출전/골)은 2026 대회 기준 근사값으로, 공식 발표/경기 진행에 따라 변동될 수 있어 검증 권장.",
     "fields": "age=나이, height=키(cm), caps=A매치 출전, goals=A매치 골, club=소속팀, league=리그",
-    "photoGuide": "사진 파일 네이밍 규칙: public/players/{국가코드}_{등번호}.{jpg|jpeg|png} (예: kor_7.jpg). 해당 파일을 넣기만 하면 카드에 자동 표시되고, 없으면 등번호 아바타로 대체. photo 칸에 직접 경로/URL을 넣으면 규칙보다 우선 적용(선택).",
+    "photoGuide": "사진 우선순위: ① public/players/{국가코드}_{등번호}.{jpg|jpeg|png} 업로드 파일(예: kor_7.jpg) ② photo URL(위키미디어 등) ③ 등번호 아바타. 즉 규칙에 맞춰 직접 올린 파일이 photo URL보다 우선 적용된다.",
     "selection": "선정 우선순위: ① 외신 주목 선수 ② 5대리그 출신. 팀당 최소 3명~최대 6명.",
     "source": "공개 정보(FIFA/Wikipedia/언론) 기반"
   },
