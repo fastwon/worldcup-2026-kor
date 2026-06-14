@@ -39,7 +39,11 @@
       "confirmed": true,
       "result": null,
       "outcome": null,
-      "links": []
+      "links": [
+        { "type": "highlight", "label": "하이라이트 영상", "url": "https://www.youtube.com/results?search_query=대한민국+멕시코+하이라이트+2026+월드컵" },
+        { "type": "article", "label": "관련 기사 (네이버 뉴스)", "url": "https://search.naver.com/search.naver?where=news&query=대한민국+멕시코+월드컵" },
+        { "type": "article", "label": "관련 기사 (구글 뉴스)", "url": "https://news.google.com/search?q=대한민국+멕시코+월드컵&hl=ko&gl=KR" }
+      ]
     },
     {
       "id": "kor-g3",
@@ -54,7 +58,11 @@
       "confirmed": true,
       "result": null,
       "outcome": null,
-      "links": []
+      "links": [
+        { "type": "highlight", "label": "하이라이트 영상", "url": "https://www.youtube.com/results?search_query=대한민국+남아공+하이라이트+2026+월드컵" },
+        { "type": "article", "label": "관련 기사 (네이버 뉴스)", "url": "https://search.naver.com/search.naver?where=news&query=대한민국+남아공+월드컵" },
+        { "type": "article", "label": "관련 기사 (구글 뉴스)", "url": "https://news.google.com/search?q=대한민국+남아공+월드컵&hl=ko&gl=KR" }
+      ]
     }
   ]
 }

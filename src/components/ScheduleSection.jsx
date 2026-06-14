@@ -29,6 +29,13 @@ function MatchCard({ match }) {
   const outcome = OUTCOME[match.outcome]
   const venue = venuesData.venues[match.venue]
 
+  // 경기 종료 판정: 결과가 입력됐거나, 킥오프 후 약 2.5시간이 지났으면 종료로 간주.
+  // → 미리 넣어둔 하이라이트·기사 검색 링크가 경기 후 자동으로 노출됨(푸시 불필요).
+  const FINISH_BUFFER_MS = 2.5 * 60 * 60 * 1000
+  const finished =
+    hasResult || Date.now() >= new Date(match.kickoffKst).getTime() + FINISH_BUFFER_MS
+  const showLinks = finished && match.links?.length > 0
+
   return (
     <article className={`match-card ${hasResult ? 'match-card--done' : ''}`}>
       <div className="match-card__round">{match.round}</div>
@@ -77,8 +84,12 @@ function MatchCard({ match }) {
         </span>
       )}
 
-      {match.links?.length > 0 && (
+      {showLinks && (
         <div className="match-card__links">
+          <span className="match-card__links-title">📺 경기 후 정보</span>
+          {!hasResult && (
+            <span className="match-card__links-hint">결과(스코어)는 업데이트 예정</span>
+          )}
           {match.links.map((link) => (
             <a
               key={link.url}

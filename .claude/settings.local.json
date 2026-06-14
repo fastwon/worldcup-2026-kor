@@ -34,7 +34,12 @@
       "Bash(git branch *)",
       "Bash(git remote *)",
       "Bash(git push *)",
-      "Bash(git commit -q -m 'GitHub Pages 자동 배포 설정 \\(base 경로·Actions 워크플로\\) *)"
+      "Bash(git commit -q -m 'GitHub Pages 자동 배포 설정 \\(base 경로·Actions 워크플로\\) *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fastwon.github.io/worldcup-2026-kor/\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fastwon.github.io/worldcup-2026-kor/players/kor_7.jpg\")",
+      "Bash(curl -s \"https://fastwon.github.io/worldcup-2026-kor/\")",
+      "Bash(curl -s -o /dev/null -w \"ScheduleSection.jsx \\(dev\\) -> %{http_code}\\\\n\" \"http://localhost:5173/src/components/ScheduleSection.jsx\")",
+      "Bash(git commit -q -m '경기 후 하이라이트/기사 검색 링크 자동 노출 \\(멕시코·남아공전\\) *)"
     ]
   }
 }
