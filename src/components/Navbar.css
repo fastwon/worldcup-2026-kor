@@ -1,0 +1,124 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar--scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar__brand-mark {
+  font-size: 1.4rem;
+}
+
+.navbar--scrolled .navbar__brand {
+  color: var(--color-ink);
+}
+
+.navbar--scrolled .navbar__brand strong {
+  color: var(--color-taegeuk-red);
+}
+
+.navbar__links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.navbar__links a {
+  font-weight: 500;
+  color: #fff;
+  padding: 0.4rem 0;
+  position: relative;
+}
+
+.navbar__links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.2s ease;
+}
+
+.navbar__links a:hover::after {
+  width: 100%;
+}
+
+.navbar--scrolled .navbar__links a {
+  color: var(--color-ink-soft);
+}
+
+.navbar__toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  line-height: 1;
+}
+
+.navbar--scrolled .navbar__toggle {
+  color: var(--color-ink);
+}
+
+/* 모바일 */
+@media (max-width: 760px) {
+  .navbar__toggle {
+    display: block;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .navbar__links.is-open {
+    max-height: 440px;
+  }
+
+  .navbar__links li {
+    border-top: 1px solid var(--color-line);
+  }
+
+  .navbar__links a {
+    display: block;
+    color: var(--color-ink) !important;
+    padding: var(--space-md);
+  }
+}

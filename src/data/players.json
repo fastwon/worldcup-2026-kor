@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "note": "스탯(나이·키·A매치 출전/골)은 2026 대회 기준 근사값으로, 공식 발표/경기 진행에 따라 변동될 수 있어 검증 권장.",
+    "fields": "age=나이, height=키(cm), caps=A매치 출전, goals=A매치 골, club=소속팀, league=리그",
+    "photoGuide": "사진 파일 네이밍 규칙: public/players/{국가코드}_{등번호}.{jpg|jpeg|png} (예: kor_7.jpg). 해당 파일을 넣기만 하면 카드에 자동 표시되고, 없으면 등번호 아바타로 대체. photo 칸에 직접 경로/URL을 넣으면 규칙보다 우선 적용(선택).",
+    "selection": "선정 우선순위: ① 외신 주목 선수 ② 5대리그 출신. 팀당 최소 3명~최대 6명.",
+    "source": "공개 정보(FIFA/Wikipedia/언론) 기반"
+  },
+  "players": {
+    "kor": [
+      { "name": "손흥민", "nameEn": "Son Heung-min", "pos": "FW", "number": 7, "age": 33, "height": 183, "club": "LAFC", "league": "MLS", "caps": 144, "goals": 51, "captain": true, "watch": true, "photo": "", "note": "주장이자 역대 최다 출전. 2025년 토트넘을 떠나 LAFC로 이적. 월드컵 통산 3골(역대 공동 1위)." },
+      { "name": "김민재", "nameEn": "Kim Min-jae", "pos": "DF", "number": 3, "age": 29, "height": 190, "club": "바이에른 뮌헨", "league": "분데스리가", "caps": 75, "goals": 4, "captain": false, "watch": true, "photo": "", "note": "수비의 핵. 대인 방어와 빌드업을 겸비한 월드클래스 센터백." },
+      { "name": "이강인", "nameEn": "Lee Kang-in", "pos": "MF", "number": 18, "age": 25, "height": 173, "club": "PSG", "league": "리그앙", "caps": 40, "goals": 10, "captain": false, "watch": true, "photo": "", "note": "창의적인 패스와 키패스로 공격을 설계하는 플레이메이커." },
+      { "name": "황희찬", "nameEn": "Hwang Hee-chan", "pos": "FW", "number": 11, "age": 30, "height": 177, "club": "울버햄튼", "league": "프리미어리그", "caps": 70, "goals": 16, "captain": false, "watch": false, "photo": "", "note": "폭발적인 스피드로 측면 침투를 책임지는 공격수." },
+      { "name": "옌스 카스트로프", "nameEn": "Jens Castrop", "pos": "MF", "number": 16, "age": 22, "height": 181, "club": "보루시아 묀헨글라트바흐", "league": "분데스리가", "caps": 5, "goals": 0, "captain": false, "watch": false, "photo": "", "note": "독일 태생, 대한민국 대표팀 사상 첫 외국 태생·혼혈 선수. 중원과 윙백을 모두 소화하는 멀티 플레이어." },
+      { "name": "오현규", "nameEn": "Oh Hyun-gyu", "pos": "FW", "number": 9, "age": 25, "height": 188, "club": "베식타스", "league": "쉬페르리그", "caps": 25, "goals": 6, "captain": false, "watch": false, "photo": "", "note": "1차전 체코전 극장 결승골의 주인공. 높이와 골 결정력을 갖춘 타깃형 스트라이커." }
+    ],
+    "mex": [
+      { "name": "산티아고 히메네스", "nameEn": "Santiago Giménez", "pos": "FW", "number": 9, "age": 24, "height": 183, "club": "AC 밀란", "league": "세리에 A", "caps": 35, "goals": 8, "captain": false, "watch": true, "photo": "", "note": "박스 안 결정력이 뛰어난 멕시코의 주포." },
+      { "name": "라울 히메네스", "nameEn": "Raúl Jiménez", "pos": "FW", "number": 19, "age": 34, "height": 190, "club": "풀럼", "league": "프리미어리그", "caps": 100, "goals": 40, "captain": false, "watch": false, "photo": "", "note": "자국 월드컵에 임하는 베테랑 스트라이커. 높이와 연계 모두 강점." },
+      { "name": "에드손 알바레스", "nameEn": "Edson Álvarez", "pos": "MF", "number": 4, "age": 28, "height": 187, "club": "페네르바흐체", "league": "쉬페르리그", "caps": 85, "goals": 5, "captain": true, "watch": false, "photo": "", "note": "주장이자 수비형 미드필더. 중원 차단과 볼 회수가 핵심." },
+      { "name": "요한 바스케스", "nameEn": "Johan Vásquez", "pos": "DF", "number": 3, "age": 27, "height": 184, "club": "제노아", "league": "세리에 A", "caps": 35, "goals": 2, "captain": false, "watch": false, "photo": "", "note": "세리에A에서 검증된 왼발 센터백." }
+    ],
+    "cze": [
+      { "name": "파트리크 시크", "nameEn": "Patrik Schick", "pos": "FW", "number": 10, "age": 30, "height": 187, "club": "바이엘 레버쿠젠", "league": "분데스리가", "caps": 50, "goals": 24, "captain": false, "watch": true, "photo": "", "note": "체코 최초로 유럽 5대리그 통산 100골 달성. A매치 50경기 24골의 핵심 스트라이커." },
+      { "name": "토마시 소우체크", "nameEn": "Tomáš Souček", "pos": "MF", "number": 15, "age": 31, "height": 192, "club": "웨스트햄", "league": "프리미어리그", "caps": 80, "goals": 17, "captain": true, "watch": false, "photo": "", "note": "주장이자 세트피스 위협이 큰 장신 박스 투 박스 미드필더." },
+      { "name": "라디슬라프 크레이치", "nameEn": "Ladislav Krejčí", "pos": "DF", "number": 6, "age": 26, "height": 188, "club": "울버햄튼", "league": "프리미어리그", "caps": 35, "goals": 3, "captain": false, "watch": false, "photo": "", "note": "빌드업에 능한 수비 리더. 후방에서 경기를 풀어간다." },
+      { "name": "파벨 슐츠", "nameEn": "Pavel Šulc", "pos": "MF", "number": 20, "age": 25, "height": 180, "club": "리옹", "league": "리그앙", "caps": 15, "goals": 3, "captain": false, "watch": false, "photo": "", "note": "리옹에서 두 자릿수 득점을 올린 창의적인 공격형 미드필더." },
+      { "name": "아담 흘로제크", "nameEn": "Adam Hložek", "pos": "FW", "number": 22, "age": 23, "height": 188, "club": "호펜하임", "league": "분데스리가", "caps": 35, "goals": 6, "captain": false, "watch": false, "photo": "", "note": "측면과 최전방을 오가는 다재다능한 젊은 공격수." },
+      { "name": "블라디미르 쿠팔", "nameEn": "Vladimír Coufal", "pos": "DF", "number": 5, "age": 33, "height": 178, "club": "호펜하임", "league": "분데스리가", "caps": 55, "goals": 1, "captain": false, "watch": false, "photo": "", "note": "경험이 풍부한 오른쪽 풀백. 적극적인 오버래핑이 강점." }
+    ],
+    "rsa": [
+      { "name": "라일 포스터", "nameEn": "Lyle Foster", "pos": "FW", "number": 9, "age": 25, "height": 183, "club": "번리", "league": "프리미어리그", "caps": 20, "goals": 5, "captain": false, "watch": true, "photo": "", "note": "스쿼드 내 거의 유일한 5대리그 자원. 프리미어리그에서 단련된 신체 능력과 압박 내성." },
+      { "name": "론웬 윌리엄스", "nameEn": "Ronwen Williams", "pos": "GK", "number": 1, "age": 34, "height": 185, "club": "맘엘로디 선다운스", "league": "남아공 PSL", "caps": 40, "goals": 0, "captain": true, "watch": false, "photo": "", "note": "주장이자 수문장. 2023 네이션스컵 8강 승부차기 4세이브 영웅." },
+      { "name": "테보호 모케나", "nameEn": "Teboho Mokoena", "pos": "MF", "number": 8, "age": 28, "height": 182, "club": "맘엘로디 선다운스", "league": "남아공 PSL", "caps": 40, "goals": 8, "captain": false, "watch": false, "photo": "", "note": "중원의 핵. 정확한 중거리 슈팅과 세트피스가 위협적." },
+      { "name": "렐레보힐레 모포켕", "nameEn": "Relebohile Mofokeng", "pos": "FW", "number": 20, "age": 21, "height": 170, "club": "올랜도 파이리츠", "league": "남아공 PSL", "caps": 15, "goals": 3, "captain": false, "watch": false, "photo": "", "note": "남아공 최고의 유망주로 꼽히는 어린 윙어. 드리블 돌파가 위협적." },
+      { "name": "오스윈 아폴리스", "nameEn": "Oswin Appollis", "pos": "MF", "number": 11, "age": 24, "height": 175, "club": "올랜도 파이리츠", "league": "남아공 PSL", "caps": 20, "goals": 4, "captain": false, "watch": false, "photo": "", "note": "빠른 스피드로 측면을 허무는 윙어." }
+    ]
+  }
+}

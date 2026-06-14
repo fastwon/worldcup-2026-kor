@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "note": "대한민국 경기가 열리는 경기장. 해발고도는 근사값(m).",
+    "source": "공개 정보 기반"
+  },
+  "venues": {
+    "에스타디오 아크론": {
+      "nameEn": "Estadio Akron",
+      "country": "멕시코",
+      "countryFlag": "🇲🇽",
+      "city": "사포판 (과달라하라 광역권)",
+      "altitude": 1560,
+      "capacity": 48071,
+      "note": "해발 1,500m대 고지대. 산소가 옅어 후반 체력 안배가 변수."
+    },
+    "에스타디오 BBVA": {
+      "nameEn": "Estadio BBVA",
+      "country": "멕시코",
+      "countryFlag": "🇲🇽",
+      "city": "과달루페 (몬테레이 광역권)",
+      "altitude": 500,
+      "capacity": 53500,
+      "note": "'강철 거인'으로 불리는 현대식 구장. 고도는 낮지만 6월 더위가 변수."
+    }
+  }
+}

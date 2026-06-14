@@ -1,0 +1,183 @@
+/* === 조 편성표 === */
+.group-table {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.group-table__head,
+.group-table__row {
+  display: grid;
+  grid-template-columns: 1fr auto 90px;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.group-table__head {
+  background: var(--color-ink);
+  color: #fff;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.group-table__rank-head {
+  text-align: right;
+}
+
+.group-table__row {
+  border-top: 1px solid var(--color-line);
+}
+
+.group-table__row.is-korea {
+  background: rgba(205, 46, 58, 0.06);
+  box-shadow: inset 3px 0 0 var(--color-taegeuk-red);
+}
+
+.group-table__team {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.group-table__flag {
+  font-size: 1.6rem;
+}
+
+.group-table__name {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.group-table__tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(0, 71, 160, 0.1);
+  color: var(--color-taegeuk-blue);
+}
+
+.group-table__tag--kor {
+  background: rgba(205, 46, 58, 0.12);
+  color: var(--color-taegeuk-red);
+}
+
+.group-table__conf {
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+}
+
+.group-table__rank {
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.group-table__note {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+}
+
+/* === 공통 소제목 === */
+.group__subtitle {
+  font-size: var(--fs-h3);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+/* === 팀별 전력 카드 === */
+.group-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.group-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.group-card.is-korea {
+  border-color: var(--color-taegeuk-red);
+  box-shadow: 0 0 0 1px var(--color-taegeuk-red), var(--shadow-sm);
+}
+
+.group-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.group-card__flag {
+  font-size: 2.2rem;
+}
+
+.group-card__name {
+  font-size: var(--fs-h3);
+}
+
+.group-card__tagline {
+  font-size: var(--fs-small);
+  color: var(--color-taegeuk-blue);
+  font-weight: 700;
+}
+
+.group-card__summary {
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+}
+
+.group__hint {
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+  margin-top: calc(var(--space-md) * -1 + 0.2rem);
+  margin-bottom: var(--space-md);
+  background: rgba(0, 71, 160, 0.05);
+  border-left: 3px solid var(--color-taegeuk-blue);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+/* === 진출 시나리오 === */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.scenario-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg) var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.scenario-card__icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.scenario-card__title {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-xs);
+}
+
+.scenario-card__desc {
+  font-size: 0.92rem;
+  color: var(--color-ink-soft);
+}

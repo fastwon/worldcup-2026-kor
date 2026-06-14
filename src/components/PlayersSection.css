@@ -1,0 +1,82 @@
+/* === 팀 탭 === */
+.players-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.players-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  transition: all 0.15s ease;
+}
+
+.players-tab:hover {
+  border-color: var(--color-taegeuk-blue);
+}
+
+.players-tab.is-active {
+  background: var(--color-taegeuk-blue);
+  border-color: var(--color-taegeuk-blue);
+  color: #fff;
+}
+
+.players-tab.is-active.is-korea {
+  background: var(--color-taegeuk-red);
+  border-color: var(--color-taegeuk-red);
+}
+
+.players-tab__flag {
+  font-size: 1.3rem;
+}
+
+/* === 팀 소개 === */
+.players-teamhead {
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.players-teamhead h3 {
+  font-size: var(--fs-h3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-xs);
+}
+
+.players-teamhead__tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--color-taegeuk-red);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+
+.players-teamhead p {
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+}
+
+/* === 선수 그리드 === */
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.players-note {
+  margin-top: var(--space-lg);
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+}

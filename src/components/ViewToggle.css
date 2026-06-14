@@ -1,0 +1,48 @@
+.viewtoggle {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 90;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-line);
+  box-shadow: var(--shadow-sm);
+}
+
+.viewtoggle__inner {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem var(--space-md);
+  justify-content: center;
+}
+
+.viewtoggle__btn {
+  flex: 1;
+  max-width: 280px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-ink-soft);
+  background: var(--color-surface-alt);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  transition: all 0.15s ease;
+}
+
+.viewtoggle__btn:hover {
+  border-color: var(--color-taegeuk-blue);
+}
+
+.viewtoggle__btn.is-active {
+  color: #fff;
+  background: var(--color-taegeuk-blue);
+  border-color: var(--color-taegeuk-blue);
+}
+
+@media (max-width: 560px) {
+  .viewtoggle__btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.6rem;
+  }
+}

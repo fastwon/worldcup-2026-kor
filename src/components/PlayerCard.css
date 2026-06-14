@@ -1,0 +1,187 @@
+/* === 선수 카드 (선수 분석 / 조별 주장 공용) === */
+.player-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.player-card.is-watch {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 1px var(--color-gold), var(--shadow-sm);
+}
+
+/* === 국가 표시 (조별 주장 카드 등) === */
+.player-card__country {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.6rem;
+  margin-bottom: var(--space-sm);
+}
+
+.player-card__country-flag {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.player-card__country-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.player-card__top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+/* === 선수 사진 / 대체 아바타 === */
+.player-card__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: 0 auto var(--space-sm);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border: 3px solid var(--color-line);
+  background: var(--color-surface-alt);
+}
+
+.player-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-card__avatar--fallback {
+  border: none;
+}
+
+.player-card__avatar-num {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.pos-bg--GK { background: #2f9e44; }
+.pos-bg--DF { background: #1971c2; }
+.pos-bg--MF { background: #f08c00; }
+.pos-bg--FW { background: #e03131; }
+
+.player-card__shirt {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.player-card__pos {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 0.15rem 0.5rem;
+}
+
+.pos--GK { background: #2f9e44; }
+.pos--DF { background: #1971c2; }
+.pos--MF { background: #f08c00; }
+.pos--FW { background: #e03131; }
+
+.player-card__badges {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-end;
+}
+
+.player-card__badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  white-space: nowrap;
+}
+
+.badge--captain {
+  color: var(--color-taegeuk-blue);
+  background: rgba(0, 71, 160, 0.1);
+}
+
+.badge--watch {
+  color: #fff;
+  background: var(--color-gold);
+}
+
+.badge--key {
+  color: #fff;
+  background: var(--color-taegeuk-red);
+}
+
+.player-card__name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.player-card__en {
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.player-card__club {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-taegeuk-blue);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.player-card__club span {
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
+.player-card__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-top: 1px dashed var(--color-line);
+  border-bottom: 1px dashed var(--color-line);
+  margin-bottom: var(--space-sm);
+}
+
+.player-card__stats li {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+}
+
+.player-card__stats span {
+  color: var(--color-muted);
+}
+
+.player-card__stats strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.player-card__note {
+  font-size: 0.88rem;
+  color: var(--color-ink-soft);
+  line-height: 1.55;
+}

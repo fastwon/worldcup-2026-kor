@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "group": "A",
+    "groupStage": { "start": "2026-06-11", "end": "2026-06-24" },
+    "source": "FIFA 2026 최종 조 추첨 (웹 검색 확인)",
+    "note": "FIFA 랭킹/감독 등 세부 수치는 추후 공식 소스로 확정 필요"
+  },
+  "teams": [
+    {
+      "id": "mex",
+      "name": "멕시코",
+      "nameEn": "Mexico",
+      "flag": "🇲🇽",
+      "fifaRank": null,
+      "seed": 1,
+      "isHost": true,
+      "isKorea": false,
+      "confederation": "CONCACAF",
+      "tagline": "개최국, 조 1번 시드",
+      "summary": "공동 개최국으로 홈 이점을 안고 A조 1번 시드로 배정됐다. 빠른 측면 공격과 풍부한 경험이 강점."
+    },
+    {
+      "id": "kor",
+      "name": "대한민국",
+      "nameEn": "South Korea",
+      "flag": "🇰🇷",
+      "fifaRank": null,
+      "seed": null,
+      "isHost": false,
+      "isKorea": true,
+      "confederation": "AFC",
+      "tagline": "손흥민 중심, 32강 토너먼트 도전",
+      "summary": "손흥민과 유럽파 핵심 자원을 앞세워 11회 연속 월드컵 본선에 진출. 조 2위 이상(또는 상위 3위)으로 32강 진출이 현실적 목표."
+    },
+    {
+      "id": "rsa",
+      "name": "남아프리카공화국",
+      "nameEn": "South Africa",
+      "flag": "🇿🇦",
+      "fifaRank": null,
+      "seed": null,
+      "isHost": false,
+      "isKorea": false,
+      "confederation": "CAF",
+      "tagline": "아프리카 대표",
+      "summary": "조직적인 수비와 역습이 강점인 아프리카 대표. 오랜만의 본선 무대에서 돌풍을 노린다."
+    },
+    {
+      "id": "cze",
+      "name": "체코",
+      "nameEn": "Czech Republic",
+      "flag": "🇨🇿",
+      "fifaRank": null,
+      "seed": null,
+      "isHost": false,
+      "isKorea": false,
+      "confederation": "UEFA",
+      "tagline": "유럽 대표",
+      "summary": "전통적으로 탄탄한 유럽 강호. 세트피스와 높이, 노련한 미드필드 운영이 까다롭다."
+    }
+  ]
+}

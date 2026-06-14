@@ -1,0 +1,124 @@
+.hero {
+  position: relative;
+  background: var(--grad-hero);
+  color: #fff;
+  padding-block: calc(var(--nav-height) + var(--space-2xl)) var(--space-2xl);
+  overflow: hidden;
+}
+
+/* 장식용 패턴 */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 10% 90%, rgba(205, 46, 58, 0.35), transparent 45%);
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__eyebrow {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  opacity: 0.9;
+  margin-bottom: var(--space-md);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-hero);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.hero__accent {
+  color: var(--color-gold);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.hero__sub {
+  margin-top: var(--space-md);
+  font-size: var(--fs-h3);
+  font-weight: 400;
+  opacity: 0.92;
+  max-width: 36ch;
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.hero__meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-md);
+}
+
+.hero__meta-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.hero__meta-value {
+  font-weight: 700;
+}
+
+.hero__countdown {
+  margin-top: var(--space-xl);
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--color-gold);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}

@@ -1,0 +1,71 @@
+.share {
+  background: var(--grad-hero);
+  color: #fff;
+  padding-block: var(--space-2xl);
+  text-align: center;
+}
+
+.share__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: 400;
+}
+
+.share__desc {
+  margin-top: var(--space-sm);
+  opacity: 0.92;
+}
+
+.share__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 0.7rem 1.3rem;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.share-btn--native {
+  background: var(--color-gold);
+  color: var(--color-ink);
+  border-color: var(--color-gold);
+}
+
+.share-btn--threads {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.share-btn--copy {
+  border-style: dashed;
+}
+
+.share__hint {
+  margin-top: var(--space-md);
+  font-size: var(--fs-small);
+  opacity: 0.85;
+}

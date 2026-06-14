@@ -1,0 +1,110 @@
+/* === 하이라이트 카드 === */
+.changes-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.change-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--color-taegeuk-blue);
+}
+
+.change-card__emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.change-card__title {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-sm);
+}
+
+.change-card__body {
+  font-size: 0.92rem;
+  color: var(--color-ink-soft);
+  line-height: 1.65;
+}
+
+/* === 비교표 === */
+.changes-subtitle {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-md);
+}
+
+.compare-table {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.4fr;
+  align-items: center;
+}
+
+.compare-row:not(:last-child) {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.compare-cell {
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.92rem;
+}
+
+.compare-cell--label {
+  font-weight: 700;
+  background: var(--color-surface-alt);
+}
+
+.compare-cell--before {
+  color: var(--color-muted);
+}
+
+.compare-cell--after {
+  font-weight: 700;
+  color: var(--color-taegeuk-red);
+}
+
+.compare-row--head .compare-cell {
+  background: var(--color-ink);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.compare-row--head .compare-cell--label {
+  background: var(--color-ink);
+}
+
+.compare-row--head .compare-cell--after {
+  color: var(--color-gold);
+}
+
+.changes-note {
+  margin-top: var(--space-md);
+  font-size: 0.95rem;
+  color: var(--color-ink-soft);
+  background: rgba(205, 46, 58, 0.06);
+  border-left: 3px solid var(--color-taegeuk-red);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+@media (max-width: 560px) {
+  .compare-cell {
+    font-size: 0.8rem;
+    padding: var(--space-xs) var(--space-sm);
+  }
+}

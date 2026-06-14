@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "team": "kor",
+    "note": "FIFA 2026 공식 확정 일정. 현지(UTC-6/UTC-4) → 한국시간(KST) 변환 반영.",
+    "timezone": "Asia/Seoul",
+    "source": "FIFA / Wikipedia 2026 FIFA World Cup Group A"
+  },
+  "matches": [
+    {
+      "id": "kor-g1",
+      "round": "조별리그 1차전",
+      "opponentId": "cze",
+      "opponent": "체코",
+      "opponentFlag": "🇨🇿",
+      "kickoffKst": "2026-06-12T11:00:00+09:00",
+      "localKickoff": "2026-06-11 20:00 (현지)",
+      "venue": "에스타디오 아크론",
+      "city": "사포판",
+      "confirmed": true,
+      "result": "2 : 1",
+      "outcome": "승",
+      "links": [
+        { "type": "highlight", "label": "하이라이트 영상", "url": "https://www.youtube.com/results?search_query=대한민국+체코+하이라이트+2026+월드컵" },
+        { "type": "article", "label": "경기 종합 리뷰 (네이트 스포츠)", "url": "https://sports.news.nate.com/view/20260612n17411" },
+        { "type": "article", "label": "'조커' 오현규 역전골 (머니투데이)", "url": "https://www.mt.co.kr/sports/2026/06/12/2026061212344680520" },
+        { "type": "article", "label": "32강에 한 발 (한국일보)", "url": "https://www.hankookilbo.com/news/article/A2026061212460003020" }
+      ]
+    },
+    {
+      "id": "kor-g2",
+      "round": "조별리그 2차전",
+      "opponentId": "mex",
+      "opponent": "멕시코",
+      "opponentFlag": "🇲🇽",
+      "kickoffKst": "2026-06-19T10:00:00+09:00",
+      "localKickoff": "2026-06-18 19:00 (현지)",
+      "venue": "에스타디오 아크론",
+      "city": "사포판",
+      "confirmed": true,
+      "result": null,
+      "outcome": null,
+      "links": []
+    },
+    {
+      "id": "kor-g3",
+      "round": "조별리그 3차전",
+      "opponentId": "rsa",
+      "opponent": "남아프리카공화국",
+      "opponentFlag": "🇿🇦",
+      "kickoffKst": "2026-06-25T10:00:00+09:00",
+      "localKickoff": "2026-06-24 19:00 (현지)",
+      "venue": "에스타디오 BBVA",
+      "city": "과달루페",
+      "confirmed": true,
+      "result": null,
+      "outcome": null,
+      "links": []
+    }
+  ]
+}

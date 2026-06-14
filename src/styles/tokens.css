@@ -1,0 +1,56 @@
+/* =========================================================
+   디자인 토큰 — 태극기 색상 기반
+   ========================================================= */
+:root {
+  /* Brand — 태극기 */
+  --color-taegeuk-red: #cd2e3a;
+  --color-taegeuk-blue: #0047a0;
+  --color-taegeuk-red-dark: #a3232d;
+  --color-taegeuk-blue-dark: #003478;
+
+  /* Neutral */
+  --color-ink: #14181f;
+  --color-ink-soft: #3a4250;
+  --color-muted: #6b7480;
+  --color-line: #e3e7ee;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f5f7fb;
+  --color-bg: #ffffff;
+
+  /* Accent */
+  --color-gold: #f0b429;
+
+  /* Gradients */
+  --grad-hero: linear-gradient(135deg, var(--color-taegeuk-blue-dark) 0%, var(--color-taegeuk-blue) 50%, var(--color-taegeuk-red) 130%);
+
+  /* Typography */
+  --font-display: 'Black Han Sans', 'Noto Sans KR', sans-serif;
+  --font-body: 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+
+  --fs-hero: clamp(2.2rem, 6vw, 4.5rem);
+  --fs-h2: clamp(1.5rem, 3.5vw, 2.4rem);
+  --fs-h3: clamp(1.1rem, 2vw, 1.4rem);
+  --fs-body: 1rem;
+  --fs-small: 0.85rem;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --container: 1120px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  /* Effects */
+  --shadow-sm: 0 1px 3px rgba(20, 24, 31, 0.08);
+  --shadow-md: 0 6px 20px rgba(20, 24, 31, 0.1);
+  --shadow-lg: 0 14px 40px rgba(20, 24, 31, 0.14);
+
+  --nav-height: 64px;
+}

@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(node -e \"const d=require\\('./src/data/players.json'\\); for\\(const[k,v]of Object.entries\\(d.players\\)\\){console.log\\(k, v.length+'명:', v.map\\(p=>p.name\\).join\\(', '\\)\\)}\")",
+      "Bash(curl -s -o /dev/null -w \"players.json -> %{http_code}\\\\n\" \"http://localhost:5173/src/data/players.json\")",
+      "Bash(curl -s -o /dev/null -w \"PlayersSection.jsx -> %{http_code}\\\\n\" \"http://localhost:5173/src/components/PlayersSection.jsx\")",
+      "Bash(curl -s -o /dev/null -w \"kor_7.jpg -> %{http_code}\\\\n\" \"http://localhost:5173/players/kor_7.jpg\")",
+      "Bash(node -e \"require\\('./src/data/matches.json'\\);console.log\\('matches.json OK'\\)\")",
+      "Bash(taskkill //F //IM node.exe)",
+      "WebFetch(domain:www.fifaworldcupnews.com)",
+      "WebFetch(domain:www.soccerphile.com)",
+      "Bash(node -e \"require\\('./src/data/captains.json'\\);console.log\\('captains.json OK'\\)\")",
+      "Bash(node -e \"const d=require\\('./src/data/captains.json'\\); console.log\\('groups:', d.groups.length\\); d.groups.forEach\\(g=>{const filled=g.teams.filter\\(t=>!t.pending\\).length; console.log\\(g.group, '— 채움', filled+'/4'\\)}\\)\")",
+      "WebFetch(domain:sportsdigest.in)",
+      "Bash(node -e \"const d=require\\('./src/data/captains.json'\\); let total=0,filled=0,dash=0; d.groups.forEach\\(g=>g.teams.forEach\\(t=>{total++; if\\(!t.pending\\){filled++; if\\(t.player.club==='—'\\)dash++}}\\)\\); console.log\\('총',total,'팀 / 주장 채움',filled,'/ 클럽 미확인\\(—\\)',dash\\)\")",
+      "Bash(curl -s -o /dev/null -w \"captains.json -> %{http_code}\\\\n\" \"http://localhost:5173/src/data/captains.json\")",
+      "Bash(node -e \"const d=require\\('./src/data/captains.json'\\); let dash=0,total=0; d.groups.forEach\\(g=>g.teams.forEach\\(t=>{total++; if\\(t.player&&t.player.club==='—'\\)dash++}\\)\\); console.log\\('총',total,'주장 / 클럽 미확인\\(—\\)',dash\\)\")",
+      "Bash(curl -s -o /dev/null -w \"ShareSection.jsx -> %{http_code}\\\\n\" \"http://localhost:5173/src/components/ShareSection.jsx\")",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m '2026 북중미 월드컵 대한민국 정보·홍보 페이지 *)"
+    ]
+  }
+}
