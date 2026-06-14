@@ -39,7 +39,11 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fastwon.github.io/worldcup-2026-kor/players/kor_7.jpg\")",
       "Bash(curl -s \"https://fastwon.github.io/worldcup-2026-kor/\")",
       "Bash(curl -s -o /dev/null -w \"ScheduleSection.jsx \\(dev\\) -> %{http_code}\\\\n\" \"http://localhost:5173/src/components/ScheduleSection.jsx\")",
-      "Bash(git commit -q -m '경기 후 하이라이트/기사 검색 링크 자동 노출 \\(멕시코·남아공전\\) *)"
+      "Bash(git commit -q -m '경기 후 하이라이트/기사 검색 링크 자동 노출 \\(멕시코·남아공전\\) *)",
+      "WebFetch(domain:de.wikipedia.org)",
+      "WebFetch(domain:ko.wikipedia.org)",
+      "Bash(node -e \"const d=require\\('./src/data/players.json'\\); d.players.kor.forEach\\(p=>console.log\\(p.name, p.photo? '사진O':'사진X'\\)\\)\")",
+      "Bash(git commit -q -m '한국 선수 사진 위키미디어 공용 적용\\(김민재·이강인·황희찬·오현규\\) + 출처 표기 *)"
     ]
   }
 }
