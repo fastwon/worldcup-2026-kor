@@ -61,7 +61,9 @@
       "Bash(git commit -q -m '선수/주장 등번호를 2026 월드컵 공식 등번호로 갱신\\(위키 원문 파싱\\) + 번호 스크립트 *)",
       "Bash(node scripts/parse-stats.mjs)",
       "Bash(node -e \"require\\('./src/data/players.json'\\);require\\('./src/data/captains.json'\\);console.log\\('JSON OK'\\)\")",
-      "Bash(git commit -q -m '일본 주장 이타쿠라 코로 교체\\(엔도 부상\\) + A매치 출전/골 공식 수치 갱신\\(63명\\) *)"
+      "Bash(git commit -q -m '일본 주장 이타쿠라 코로 교체\\(엔도 부상\\) + A매치 출전/골 공식 수치 갱신\\(63명\\) *)",
+      "Bash(node scripts/check-captains.mjs)",
+      "Bash(git commit -q -m '주장 오류 수정: 이란 하지사피, 오스트리아 알라바, 체코 크레이치\\(위키 주장 표시 교차검증\\) *)"
     ]
   }
 }

@@ -199,10 +199,10 @@
         "league": "프리미어리그",
         "caps": 90,
         "goals": 17,
-        "captain": true,
+        "captain": false,
         "watch": false,
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tom%C3%A1%C5%A1_Sou%C4%8Dek_WHU.jpeg/330px-Tom%C3%A1%C5%A1_Sou%C4%8Dek_WHU.jpeg",
-        "note": "주장이자 세트피스 위협이 큰 장신 박스 투 박스 미드필더."
+        "note": "세트피스 위협이 큰 장신 박스 투 박스 미드필더."
       },
       {
         "name": "라디슬라프 크레이치",
@@ -215,10 +215,10 @@
         "league": "프리미어리그",
         "caps": 27,
         "goals": 5,
-        "captain": false,
+        "captain": true,
         "watch": false,
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ladislav_Krej%C4%8D%C3%AD_01112025_%281%29.jpg/330px-Ladislav_Krej%C4%8D%C3%AD_01112025_%281%29.jpg",
-        "note": "빌드업에 능한 수비 리더. 후방에서 경기를 풀어간다."
+        "note": "체코의 주장이자 수비 리더. 빌드업에 능해 후방에서 경기를 풀어간다."
       },
       {
         "name": "파벨 슐츠",
