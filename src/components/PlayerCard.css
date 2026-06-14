@@ -1,5 +1,13 @@
-/* === 선수 카드 (선수 분석 / 조별 주장 공용) === */
+/* === 선수 카드 요약 타일 (클릭 시 모달) === */
 .player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
   background: var(--color-surface);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
@@ -11,6 +19,17 @@
 .player-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
+}
+
+.player-card__club--compact {
+  margin-bottom: var(--space-sm);
+}
+
+.player-card__more {
+  margin-top: auto;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--color-taegeuk-blue);
 }
 
 .player-card.is-watch {
@@ -184,4 +203,79 @@
   font-size: 0.88rem;
   color: var(--color-ink-soft);
   line-height: 1.55;
+}
+
+/* === 상세 모달 === */
+.player-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: var(--space-md);
+  background: rgba(20, 24, 31, 0.55);
+  backdrop-filter: blur(3px);
+  animation: modal-fade 0.15s ease;
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.player-modal__box {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  max-height: 88vh;
+  overflow-y: auto;
+  text-align: center;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+  box-shadow: var(--shadow-lg);
+  animation: modal-pop 0.18s ease;
+}
+
+@keyframes modal-pop {
+  from { transform: translateY(12px) scale(0.98); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.player-modal__close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-surface-alt);
+  color: var(--color-ink-soft);
+  font-size: 1rem;
+}
+
+.player-modal__close:hover {
+  background: var(--color-line);
+}
+
+/* 모달 안 아바타는 크게 */
+.player-modal__box .player-card__avatar {
+  width: 128px;
+  height: 128px;
+}
+
+.player-modal__badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+/* 모달 안에서는 뱃지 묶음을 가운데 행으로 */
+.player-modal__badges .player-card__badges {
+  margin-left: 0;
+  flex-direction: row;
+  align-items: center;
 }
