@@ -70,7 +70,8 @@
       "WebFetch(domain:www.infogoodman.com)",
       "Bash(node -e \"const d=require\\('./src/data/players.json'\\); const f=d.players.rsa.find\\(p=>p.nameEn==='Lyle Foster'\\); console.log\\('우리 데이터 — 라일 포스터: '+f.caps+'경기 '+f.goals+'골'\\)\")",
       "Bash(git commit -q -m '전 선수 A매치 수치를 위키백과 명단 기준\\(개막일·WC 제외\\)으로 통일 *)",
-      "Bash(git commit -q -m '프로필 사진 크롭 기준을 위쪽\\(center 15%\\)으로 조정해 머리 잘림 완화 *)"
+      "Bash(git commit -q -m '프로필 사진 크롭 기준을 위쪽\\(center 15%\\)으로 조정해 머리 잘림 완화 *)",
+      "Bash(git commit -q -m '타일 아바타 flex 세로 압축 방지\\(flex-shrink:0, aspect-ratio:1\\) - 모바일 사진 찌그러짐/잘림 수정 *)"
     ]
   }
 }

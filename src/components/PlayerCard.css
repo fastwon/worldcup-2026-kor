@@ -92,6 +92,9 @@
   place-items: center;
   border: 3px solid var(--color-line);
   background: var(--color-surface-alt);
+  /* flex 세로 정렬 안에서 세로로 찌그러지지 않도록 정사각형 고정 */
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
 }
 
 .player-card__avatar img {
