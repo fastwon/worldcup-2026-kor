@@ -65,7 +65,11 @@
       "Bash(node scripts/check-captains.mjs)",
       "Bash(git commit -q -m '주장 오류 수정: 이란 하지사피, 오스트리아 알라바, 체코 크레이치\\(위키 주장 표시 교차검증\\) *)",
       "Bash(git commit -q -m '히어로 CTA\\(경기일정/A조분석\\)를 뷰 전환+스크롤로 동작하게 수정 \\(다른 조 뷰에서도 작동\\) *)",
-      "Bash(git commit -q -m '주장 섹션 안내문구 정리\\(완료된 '\\\\''순차 추가'\\\\'' 문장 삭제\\) + 히어로 CTA 스크롤이 섹션 제목을 상단에 맞추도록 수정 *)"
+      "Bash(git commit -q -m '주장 섹션 안내문구 정리\\(완료된 '\\\\''순차 추가'\\\\'' 문장 삭제\\) + 히어로 CTA 스크롤이 섹션 제목을 상단에 맞추도록 수정 *)",
+      "WebFetch(domain:namu.wiki)",
+      "WebFetch(domain:www.infogoodman.com)",
+      "Bash(node -e \"const d=require\\('./src/data/players.json'\\); const f=d.players.rsa.find\\(p=>p.nameEn==='Lyle Foster'\\); console.log\\('우리 데이터 — 라일 포스터: '+f.caps+'경기 '+f.goals+'골'\\)\")",
+      "Bash(git commit -q -m '전 선수 A매치 수치를 위키백과 명단 기준\\(개막일·WC 제외\\)으로 통일 *)"
     ]
   }
 }
