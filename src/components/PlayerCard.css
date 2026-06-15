@@ -83,6 +83,7 @@
 
 /* === 선수 사진 / 대체 아바타 === */
 .player-card__avatar {
+  position: relative;
   width: 96px;
   height: 96px;
   border-radius: 50%;
@@ -97,12 +98,16 @@
   aspect-ratio: 1 / 1;
 }
 
+/* 절대 위치로 컨테이너를 정확히 채워 grid/flex 중앙정렬 영향 없이 cover 보장 */
 .player-card__avatar img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
-  /* 세로로 긴 사진에서 머리 윗부분이 잘리지 않도록 위쪽 기준으로 크롭 */
-  object-position: center 15%;
+  /* 머리 윗부분이 잘리지 않도록 위쪽 기준으로 크롭 */
+  object-position: center 20%;
 }
 
 .player-card__avatar--fallback {
