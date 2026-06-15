@@ -98,7 +98,8 @@
   aspect-ratio: 1 / 1;
 }
 
-/* 절대 위치로 컨테이너를 정확히 채워 grid/flex 중앙정렬 영향 없이 cover 보장 */
+/* 절대 위치로 컨테이너를 정확히 채워 grid/flex 중앙정렬 영향 없이 cover 보장.
+   크롭 위치는 기본값(center) — 위키 사진 대부분이 얼굴+상반신이라 가운데가 가장 잘 맞음. */
 .player-card__avatar img {
   position: absolute;
   inset: 0;
@@ -106,8 +107,6 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  /* 머리 윗부분이 잘리지 않도록 위쪽 기준으로 크롭 */
-  object-position: center 20%;
 }
 
 .player-card__avatar--fallback {

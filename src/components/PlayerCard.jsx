@@ -25,6 +25,8 @@ function PlayerAvatar({ player, teamId }) {
           alt={player.name}
           loading="lazy"
           onError={() => setIdx(idx + 1)}
+          // photoPos가 있으면 그 선수만 크롭 위치 조정 (예: "center top", "center 5%")
+          style={player.photoPos ? { objectPosition: player.photoPos } : undefined}
         />
       </div>
     )
