@@ -20,9 +20,7 @@ export default function CaptainsSection() {
         <span className="section__eyebrow">Captains</span>
         <h2 className="section__title">조별 주장 프로필</h2>
         <p className="section__lead">
-          다른 조의 화제를 모은 팀들. 각 조 4개국의 <strong>주장</strong>을 선수 카드와 같은 형태로 소개합니다.
-          <br />
-          <small>화제 조부터 우선 정리했으며, 나머지 조는 순차적으로 추가됩니다.</small>
+          A조를 제외한 11개 조, 각 조 4개국의 <strong>주장</strong>을 선수 카드와 같은 형태로 소개합니다.
         </p>
 
         {captainsData.groups.map((g) => (
