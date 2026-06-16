@@ -31,38 +31,7 @@ export default function GroupSection() {
           대한민국이 속한 A조. 개최국 멕시코를 비롯한 4팀이 32강 진출권을 놓고 경쟁합니다.
         </p>
 
-        {/* 조 편성표 */}
-        <div className="group-table" role="table" aria-label="A조 편성표">
-          <div className="group-table__head" role="row">
-            <span>팀</span>
-            <span>대륙</span>
-            <span className="group-table__rank-head">FIFA 랭킹</span>
-          </div>
-          {teams.map((team) => (
-            <div
-              key={team.id}
-              className={`group-table__row ${team.isKorea ? 'is-korea' : ''}`}
-              role="row"
-            >
-              <span className="group-table__team">
-                <span className="group-table__flag">{team.flag}</span>
-                <span className="group-table__name">
-                  {team.name}
-                  {team.isHost && <span className="group-table__tag">개최국</span>}
-                  {team.isKorea && <span className="group-table__tag group-table__tag--kor">대한민국</span>}
-                </span>
-              </span>
-              <span className="group-table__conf">{team.confederation}</span>
-              <span className="group-table__rank">
-                {team.fifaRank ?? '—'}
-              </span>
-            </div>
-          ))}
-        </div>
-        <p className="group-table__note">FIFA 랭킹 수치는 공식 발표 기준으로 확정 예정.</p>
-
-        {/* 팀별 전력 요약 */}
-        <h3 className="group__subtitle">팀별 전력 한눈에</h3>
+        {/* 팀별 전력 요약 (FIFA 랭킹 포함) */}
         <div className="group-cards">
           {teams.map((team) => (
             <article
@@ -71,10 +40,15 @@ export default function GroupSection() {
             >
               <div className="group-card__header">
                 <span className="group-card__flag">{team.flag}</span>
-                <div>
+                <div className="group-card__headtext">
                   <h4 className="group-card__name">{team.name}</h4>
                   <span className="group-card__tagline">{team.tagline}</span>
                 </div>
+                {team.fifaRank && (
+                  <span className="group-card__rank">
+                    <small>FIFA</small>{team.fifaRank}위
+                  </span>
+                )}
               </div>
               <p className="group-card__summary">{team.summary}</p>
             </article>
