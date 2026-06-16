@@ -6,7 +6,7 @@
       "end": "2026-06-24"
     },
     "source": "FIFA 2026 최종 조 추첨 (웹 검색 확인)",
-    "note": "FIFA 랭킹은 2026년 6월 기준. 감독 등 일부 정보는 추후 보강."
+    "note": "FIFA 랭킹은 2026년 6월 16일 기준. 감독 등 일부 정보는 추후 보강."
   },
   "teams": [
     {
@@ -14,7 +14,7 @@
       "name": "멕시코",
       "nameEn": "Mexico",
       "flag": "🇲🇽",
-      "fifaRank": 14,
+      "fifaRank": 13,
       "seed": 1,
       "isHost": true,
       "isKorea": false,
@@ -27,7 +27,7 @@
       "name": "대한민국",
       "nameEn": "South Korea",
       "flag": "🇰🇷",
-      "fifaRank": 25,
+      "fifaRank": 21,
       "seed": null,
       "isHost": false,
       "isKorea": true,
@@ -40,7 +40,7 @@
       "name": "남아프리카공화국",
       "nameEn": "South Africa",
       "flag": "🇿🇦",
-      "fifaRank": 60,
+      "fifaRank": 61,
       "seed": null,
       "isHost": false,
       "isKorea": false,
@@ -53,7 +53,7 @@
       "name": "체코",
       "nameEn": "Czech Republic",
       "flag": "🇨🇿",
-      "fifaRank": 40,
+      "fifaRank": 43,
       "seed": null,
       "isHost": false,
       "isKorea": false,

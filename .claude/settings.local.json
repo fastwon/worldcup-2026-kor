@@ -77,7 +77,10 @@
       "Bash(git commit -q -m '아바타 크롭 기준 top으로 - 원 꽉 채우면서 얼굴\\(사진 위쪽\\) 항상 보이게\\(하단 잘림\\) *)",
       "Bash(node -e \"require\\('./src/data/teams.json'\\);console.log\\('JSON OK'\\)\")",
       "Bash(git commit -q -m 'A조 분석: 조 편성표 삭제, 팀별 전력 카드에 FIFA 랭킹\\(2026.6\\) 추가 *)",
-      "Bash(git commit -q -m 'A조 FIFA 랭킹 출처/기준일\\(2026년 6월 FIFA 공식\\) 표기 추가 *)"
+      "Bash(git commit -q -m 'A조 FIFA 랭킹 출처/기준일\\(2026년 6월 FIFA 공식\\) 표기 추가 *)",
+      "WebFetch(domain:football-ranking.com)",
+      "Bash(node -e \"require\\('./src/data/teams.json'\\)\")",
+      "Bash(git commit -q -m 'A조 FIFA 랭킹 갱신\\(6/16 기준\\): 멕시코13·한국21·체코43·남아공61, 라벨 날짜 명시 *)"
     ]
   }
 }

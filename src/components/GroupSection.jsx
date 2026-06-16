@@ -56,7 +56,7 @@ export default function GroupSection() {
         </div>
 
         <p className="group-cards__note">
-          ※ FIFA 랭킹은 <strong>2026년 6월 FIFA 공식 랭킹</strong> 기준입니다 (출처:{' '}
+          ※ FIFA 랭킹은 <strong>2026년 6월 16일 기준</strong>입니다 (출처:{' '}
           <a href="https://www.fifa.com/fifa-world-ranking/" target="_blank" rel="noopener noreferrer">FIFA 공식 랭킹</a>).
           랭킹은 경기 결과에 따라 수시로 변동될 수 있습니다.
         </p>
