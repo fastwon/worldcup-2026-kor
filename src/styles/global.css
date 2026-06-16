@@ -79,23 +79,3 @@ button {
   font-size: var(--fs-h2);
   margin-bottom: var(--space-md);
 }
-
-.section__placeholder {
-  color: var(--color-muted);
-  background: var(--color-surface);
-  border: 1px dashed var(--color-line);
-  border-radius: var(--radius-md);
-  padding: var(--space-xl);
-  text-align: center;
-}
-
-.section__placeholder .tag {
-  display: inline-block;
-  font-size: var(--fs-small);
-  font-weight: 700;
-  color: var(--color-taegeuk-blue);
-  background: rgba(0, 71, 160, 0.08);
-  border-radius: 999px;
-  padding: 0.2rem 0.7rem;
-  margin-top: var(--space-sm);
-}
