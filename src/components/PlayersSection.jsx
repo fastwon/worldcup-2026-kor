@@ -61,7 +61,7 @@ export default function PlayersSection() {
         </div>
 
         <p className="players-note">
-          ⚠️ 나이·키·A매치 출전/골은 근사값이며 공식 발표 기준으로 보정될 수 있습니다.
+          등번호·A매치 기록은 2026 월드컵 공식 명단 기준 (나이·키는 근사값일 수 있음).
           <br />
           일부 선수 사진 출처: 위키미디어 공용(Wikimedia Commons, CC 라이선스).
         </p>

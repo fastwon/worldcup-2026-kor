@@ -2,17 +2,6 @@ import captainsData from '../data/captains.json'
 import PlayerCard from './PlayerCard'
 import './CaptainsSection.css'
 
-function PendingCard({ team }) {
-  return (
-    <article className="captain-pending">
-      <span className="captain-pending__flag">{team.flag}</span>
-      <h4 className="captain-pending__country">{team.country}</h4>
-      <p className="captain-pending__msg">주장 정보 확인 중</p>
-      <span className="captain-pending__tag">데이터 추가 예정</span>
-    </article>
-  )
-}
-
 export default function CaptainsSection() {
   return (
     <section id="captains" className="section section--alt">
@@ -30,20 +19,16 @@ export default function CaptainsSection() {
               <span className="captains-group__tag">{g.tag}</span>
             </div>
             <div className="captains-grid">
-              {g.teams.map((team) =>
-                team.pending ? (
-                  <PendingCard key={team.code} team={team} />
-                ) : (
-                  <PlayerCard
-                    key={team.code}
-                    player={team.player}
-                    teamId={team.code}
-                    isKorea={false}
-                    country={team.country}
-                    flag={team.flag}
-                  />
-                )
-              )}
+              {g.teams.map((team) => (
+                <PlayerCard
+                  key={team.code}
+                  player={team.player}
+                  teamId={team.code}
+                  isKorea={false}
+                  country={team.country}
+                  flag={team.flag}
+                />
+              ))}
             </div>
           </div>
         ))}

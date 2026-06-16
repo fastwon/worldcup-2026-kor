@@ -80,7 +80,8 @@
       "Bash(git commit -q -m 'A조 FIFA 랭킹 출처/기준일\\(2026년 6월 FIFA 공식\\) 표기 추가 *)",
       "WebFetch(domain:football-ranking.com)",
       "Bash(node -e \"require\\('./src/data/teams.json'\\)\")",
-      "Bash(git commit -q -m 'A조 FIFA 랭킹 갱신\\(6/16 기준\\): 멕시코13·한국21·체코43·남아공61, 라벨 날짜 명시 *)"
+      "Bash(git commit -q -m 'A조 FIFA 랭킹 갱신\\(6/16 기준\\): 멕시코13·한국21·체코43·남아공61, 라벨 날짜 명시 *)",
+      "Bash(git commit -q -m '이제 안 맞는 안내문구 정리: 선수 '\\\\''A매치 근사값'\\\\'' 표현 수정, 미사용 주장 '\\\\''확인 중'\\\\'' 카드 코드/CSS 제거 *)"
     ]
   }
 }
