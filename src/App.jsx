@@ -20,24 +20,27 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  // 히어로 CTA: 대한민국 뷰로 전환 후 해당 섹션의 '제목'이 고정 바 바로 아래 오도록 스크롤
+  // 해당 섹션의 '제목'이 상단 고정 바(내비+토글) 바로 아래 오도록 정밀 스크롤
+  const scrollToAnchor = (anchor) => {
+    const el = document.querySelector(anchor)
+    if (!el) return
+    // 섹션 패딩 때문에 제목이 처지지 않도록, 제목(eyebrow) 위치 기준으로 정렬
+    const heading = el.querySelector?.('.section__eyebrow') ?? el
+    const navH = document.querySelector('.navbar')?.offsetHeight ?? 64
+    const toggleH = document.querySelector('.viewtoggle')?.offsetHeight ?? 52
+    const y = heading.getBoundingClientRect().top + window.scrollY - navH - toggleH - 12
+    window.scrollTo({ top: y, behavior: 'smooth' })
+  }
+
+  // 히어로 CTA: 대한민국 뷰로 전환 후 스크롤 (뷰 전환 렌더 후 실행)
   const goToKorSection = (anchor) => {
     setView('kor')
-    setTimeout(() => {
-      const section = document.querySelector(anchor)
-      if (!section) return
-      // 섹션 패딩 때문에 제목이 한참 아래 보이지 않도록, 제목(eyebrow) 위치 기준으로 정렬
-      const heading = section.querySelector('.section__eyebrow') ?? section
-      const navH = document.querySelector('.navbar')?.offsetHeight ?? 64
-      const toggleH = document.querySelector('.viewtoggle')?.offsetHeight ?? 52
-      const y = heading.getBoundingClientRect().top + window.scrollY - navH - toggleH - 12
-      window.scrollTo({ top: y, behavior: 'smooth' })
-    }, 60)
+    setTimeout(() => scrollToAnchor(anchor), 60)
   }
 
   return (
     <>
-      <Navbar view={view} onChangeView={changeView} />
+      <Navbar view={view} onChangeView={changeView} onScrollTo={scrollToAnchor} />
       <Hero onNavigate={goToKorSection} />
       <ViewToggle view={view} onChange={changeView} />
 

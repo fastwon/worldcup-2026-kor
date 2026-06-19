@@ -17,7 +17,7 @@ const LINKS_BY_VIEW = {
   ],
 }
 
-export default function Navbar({ view, onChangeView }) {
+export default function Navbar({ view, onChangeView, onScrollTo }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -56,7 +56,16 @@ export default function Navbar({ view, onChangeView }) {
         <ul className={`navbar__links ${open ? 'is-open' : ''}`}>
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={() => setOpen(false)}>{link.label}</a>
+              <a
+                href={link.href}
+                onClick={(e) => {
+                  e.preventDefault()
+                  setOpen(false)
+                  onScrollTo(link.href)
+                }}
+              >
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
