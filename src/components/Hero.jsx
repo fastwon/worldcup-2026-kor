@@ -52,7 +52,8 @@ export default function Hero({ onNavigate }) {
         </div>
 
         <div className="hero__cta">
-          <button className="btn btn--primary" onClick={() => onNavigate('#schedule')}>경기 일정 보기</button>
+          <button className="btn btn--primary" onClick={() => onNavigate('#r32')}>🎯 32강 경우의 수</button>
+          <button className="btn btn--ghost" onClick={() => onNavigate('#schedule')}>경기 일정 보기</button>
           <button className="btn btn--ghost" onClick={() => onNavigate('#group')}>A조 분석</button>
         </div>
       </div>
