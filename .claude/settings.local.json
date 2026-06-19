@@ -83,7 +83,9 @@
       "Bash(git commit -q -m 'A조 FIFA 랭킹 갱신\\(6/16 기준\\): 멕시코13·한국21·체코43·남아공61, 라벨 날짜 명시 *)",
       "Bash(git commit -q -m '이제 안 맞는 안내문구 정리: 선수 '\\\\''A매치 근사값'\\\\'' 표현 수정, 미사용 주장 '\\\\''확인 중'\\\\'' 카드 코드/CSS 제거 *)",
       "Bash(git rm *)",
-      "Bash(git commit -q -m '미사용 PlaceholderSection 컴포넌트 및 관련 CSS 제거\\(어디서도 import 안 됨 확인\\) *)"
+      "Bash(git commit -q -m '미사용 PlaceholderSection 컴포넌트 및 관련 CSS 제거\\(어디서도 import 안 됨 확인\\) *)",
+      "Bash(node -e \"require\\('./src/data/matches.json'\\);console.log\\('JSON OK'\\)\")",
+      "Bash(git commit -q -m '멕시코전 결과 반영\\(0:1 패\\) + '\\\\''결과 업데이트 예정'\\\\'' 문구/스타일 제거 *)"
     ]
   }
 }

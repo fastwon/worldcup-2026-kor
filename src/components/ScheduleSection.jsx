@@ -87,9 +87,6 @@ function MatchCard({ match }) {
       {showLinks && (
         <div className="match-card__links">
           <span className="match-card__links-title">📺 경기 후 정보</span>
-          {!hasResult && (
-            <span className="match-card__links-hint">결과(스코어)는 업데이트 예정</span>
-          )}
           {match.links.map((link) => (
             <a
               key={link.url}
