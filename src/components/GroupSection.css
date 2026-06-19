@@ -3,6 +3,8 @@
   font-size: var(--fs-h3);
   margin-top: var(--space-xl);
   margin-bottom: var(--space-md);
+  /* 상단 고정 바(내비+토글) 아래로 정렬되도록 */
+  scroll-margin-top: calc(var(--nav-height) + 60px);
 }
 
 /* === 팀별 전력 카드 === */

@@ -86,7 +86,8 @@
       "Bash(git commit -q -m '미사용 PlaceholderSection 컴포넌트 및 관련 CSS 제거\\(어디서도 import 안 됨 확인\\) *)",
       "Bash(node -e \"require\\('./src/data/matches.json'\\);console.log\\('JSON OK'\\)\")",
       "Bash(git commit -q -m '멕시코전 결과 반영\\(0:1 패\\) + '\\\\''결과 업데이트 예정'\\\\'' 문구/스타일 제거 *)",
-      "Bash(git commit -q -m 'A조 분석: 3차전\\(남아공전\\) 진출 경우의 수 + 32강 상대 추가, 승자우선 규칙 반영 *)"
+      "Bash(git commit -q -m 'A조 분석: 3차전\\(남아공전\\) 진출 경우의 수 + 32강 상대 추가, 승자우선 규칙 반영 *)",
+      "Bash(git commit -q -m '네비에 '\\\\''32강 진출'\\\\'' 바로가기 추가\\(A조 분석 유지\\) + 시나리오 섹션 앵커\\(#r32\\) *)"
     ]
   }
 }

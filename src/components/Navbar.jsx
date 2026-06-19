@@ -7,6 +7,7 @@ const LINKS_BY_VIEW = {
     { href: '#changes', label: '2026 변경점' },
     { href: '#schedule', label: '경기 일정' },
     { href: '#group', label: 'A조 분석' },
+    { href: '#r32', label: '32강 진출' },
     { href: '#players', label: '선수 분석' },
     { href: '#stories', label: '이야기' },
   ],

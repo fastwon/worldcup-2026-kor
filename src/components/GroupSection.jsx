@@ -77,7 +77,7 @@ export default function GroupSection() {
         </p>
 
         {/* 32강 진출 시나리오 */}
-        <h3 className="group__subtitle">대한민국 32강 진출 시나리오</h3>
+        <h3 id="r32" className="group__subtitle">대한민국 32강 진출 시나리오</h3>
         <p className="group__hint">
           <strong>2차전 종료 현재</strong> — 멕시코 6점(1위 확정)·대한민국 3점(2위)·체코·남아공 각 1점.
           3차전은 <strong>vs 남아공 (6/25 KST)</strong>. 각 조 1·2위 + 3위 중 상위 8팀이 32강 진출.
